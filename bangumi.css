@@ -5,11 +5,15 @@
     #columnSubjectHomeB.column > .section_line.clear,
     #columnSubjectHomeB.column > .subject_section:nth-last-of-type(1),
     #columnSubjectHomeB.column > .subject_section:nth-last-of-type(3),
-    #columnSubjectHomeB.column > .subject_section:nth-last-of-type(5){display: none! important}
+    #columnSubjectHomeB.column > .subject_section:nth-last-of-type(5),
+    .subject_tag_section,
+    #subject_summary{display: none! important}
     /* no other people */
     .SimpleSidePanel{display: none!important}
     /* no footer */
     #footer{display: none!important}
+    /* adjust the rating board */
+    .SidePanel.png_bg > :last-child{display: none}
 }
 
 @-moz-document domain('bgm.tv') {
