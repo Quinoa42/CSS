@@ -1,0 +1,25 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix('http://bgm.tv/subject') {
+    /* no spoilers */
+    #columnSubjectHomeB.column > .section_line.clear,
+    #columnSubjectHomeB.column > .subject_section:nth-last-of-type(1),
+    #columnSubjectHomeB.column > .subject_section:nth-last-of-type(3),
+    #columnSubjectHomeB.column > .subject_section:nth-last-of-type(5){display: none! important}
+    /* no other people */
+    .SimpleSidePanel{display: none!important}
+    /* no footer */
+    #footer{display: none!important}
+}
+
+@-moz-document domain('bgm.tv') {
+    /* no footer */
+    #footer{display: none!important}
+}
+
+@-moz-document url('http://bgm.tv/') {
+    #columnHomeB{display: none!important; width:0px !important;}
+    #columnHomeA{margin:0 auto; float:none!important;}
+    #header{display:none}
+    .columns.clearit {margin-top: 18px}
+}
